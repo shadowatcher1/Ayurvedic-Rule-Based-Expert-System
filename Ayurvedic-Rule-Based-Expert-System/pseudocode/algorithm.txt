@@ -1,0 +1,44 @@
+ALGORITHM Ayurvedic_Classification
+
+START
+
+1. Read body_build
+2. Read appetite
+3. Read activity
+4. Read sleep
+5. Read temperature
+6. Read skin
+
+7. Set Vata = 0, Pitta = 0, Kapha = 0
+
+8. Apply Vata rules:
+   IF body_build = lean       THEN Vata = Vata + 1
+   IF appetite = irregular    THEN Vata = Vata + 1
+   IF activity = high         THEN Vata = Vata + 1
+   IF sleep = light           THEN Vata = Vata + 1
+   IF temperature = cold      THEN Vata = Vata + 1
+   IF skin = dry              THEN Vata = Vata + 1
+
+9. Apply Pitta rules:
+   IF body_build = medium     THEN Pitta = Pitta + 1
+   IF appetite = strong       THEN Pitta = Pitta + 1
+   IF activity = moderate     THEN Pitta = Pitta + 1
+   IF sleep = moderate        THEN Pitta = Pitta + 1
+   IF temperature = cool      THEN Pitta = Pitta + 1
+   IF skin = sensitive        THEN Pitta = Pitta + 1
+
+10. Apply Kapha rules:
+   IF body_build = large      THEN Kapha = Kapha + 1
+   IF appetite = steady       THEN Kapha = Kapha + 1
+   IF activity = low          THEN Kapha = Kapha + 1
+   IF sleep = deep            THEN Kapha = Kapha + 1
+   IF temperature = neutral   THEN Kapha = Kapha + 1
+   IF skin = oily             THEN Kapha = Kapha + 1
+
+11. max_score = MAX(Vata, Pitta, Kapha)
+12. winners = all Doshas with Score = max_score
+13. IF len(winners) = 1 THEN Display winners[0]
+14. ELSE Display "Mixed / Equal Classification"
+15. Display all three scores
+
+END
