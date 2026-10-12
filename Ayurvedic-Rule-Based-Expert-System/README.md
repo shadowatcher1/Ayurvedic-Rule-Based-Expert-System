@@ -85,7 +85,7 @@ text
 ### Steps
 
 ```bash
-git clone https://github.com/<your-username>/Ayurvedic-Rule-Based-Expert-System.git
+git clone https://github.com/shadowatcher1/Ayurvedic-Rule-Based-Expert-System.git
 cd Ayurvedic-Rule-Based-Expert-System
 python src/ayurvedic_expert_system.py
 🖥️ Sample Output
@@ -147,8 +147,7 @@ No clinical validation
 This project is licensed under the MIT License — see LICENSE for details.
 
 👤 Author
-Student Name: ____________________
-PRN: ____________________
+Student Name: Sebasteian Reji
 Course: B.Sc. Computer Science
 Subject: IKS in Computational Systems
 Institution: Smt. Devkiba Mohansinhji Chauhan College of Commerce & Science
